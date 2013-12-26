@@ -1,5 +1,5 @@
 # PRIMEWATCH
-###### *A bash script designed to look after Xolokram Primeminer launched against beeeeer.org pool* 
+###### *A bash script designed to look after Xolo's Primeminer launched against beeeeer.org pool* 
 
 ## Why? For what?
 
