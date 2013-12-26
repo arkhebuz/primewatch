@@ -20,7 +20,7 @@ logkat="/home/arkhebuz/primecoin"
 # Catalog corresponding to network interface you are using, containing carrier file (like /sys/class/net/eth0/carrier) having value of either 1 if network is up or 0 if it's down.
 netinterface="/sys/class/net/eth0"
 
-# Interval in seconds bettwen checks, too small will make the script steal cpu cycles and usually won't let the miner recover under it's own steam (if possible). Ten minutes is good enough in my expirence.
+# Interval in seconds bettwen checks, too small will make the script steal cpu cycles and usually won't let the miner recover under it's own steam when possible. Ten minutes is good enough in my expirence.
 sleeptime=600
 
 function minerlaunch {
