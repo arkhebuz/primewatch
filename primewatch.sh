@@ -33,7 +33,7 @@ function minerlaunch {
     
     # Miner settings. Adjust to yourself. Quick overview:
     # ./primeminer                                                          <-- Xolokram primeminer binary location. Default is in the same catalog as this script when launched as ./primewatch.sh SERVER PORT
-    # -pooluser=ARv6mxBygPUGuTnkujcgdkaQoGTfSFcQzV                          <-- XPM address.
+    # -pooluser=AV3w57CVmRdEA22qNiY5JFDx1J5wVUciBY                          <-- XPM address.
     # -genproclimit="8"                                                     <-- Number of threads to use.
     # -poolfee="3"                                                          <-- Adjust beeeeer.org fee, from 1 to 100, default 3%
     # -sievesize="1000000" -sieveextensions="10" -sievepercentage="9"       <-- These parameters affect mining. Nobody wants to say what this three are exactly doing. Mayby nobody knows?
