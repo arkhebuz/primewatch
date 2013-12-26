@@ -20,7 +20,7 @@ When I have started mining primecoins on my PC, occasionally two thing were happ
 * Launch script, pass to it which beeeeer.org server and port it should use, like `./primewatch.sh us 8080`. You can just leave the terminal on, or use `screen`, or put script in autostart, or do something else. I prefer the second option.
 
 ## Quirks
-* Every primeminer run has it's own logfile with it's output, named witch launch time (YYYY-MM-DD_hh.mm.ss). Additionaly there's a `netlog` file, where only communicates from script about connection are stored.
+* Every primeminer run has it's own logfile with it's output, named with launch time (YYYY-MM-DD_hh.mm.ss). Additionaly there's a `netlog` file, where only communicates from script about connection are stored.
 * Dependencies? Primeminer, pkill, pgrep, bash, grep... Nothing special.
 * Aha, works for me. May not work for you. Tested on Debian Stable.
 * Donate? Just a tip maybe?  
