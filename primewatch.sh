@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Git repositury: https://github.com/arkhebuz/primewatch/
+# Readme: https://github.com/arkhebuz/primewatch/README.md
+# Donate:  XPM
+#          DTC DMy7cMjzWycNUB4FWz2YJEmh8EET2XDvqz
+
 if [ "$#" -ne "2" ] ; then          # Script needs two parameters.
     echo "USAGE:                    ./prime.sh SERVER PORT"
     echo "beeeeer.org servers:      us, eu"
@@ -15,7 +20,7 @@ logkat="/home/arkhebuz/primecoin"
 # Catalog corresponding to network interface you are using, containing carrier file (like /sys/class/net/eth0/carrier) having value of either 1 if network is up or 0 if it's down.
 netinterface="/sys/class/net/eth0"
 
-# Interval in seconds bettwen check's, too small will make the script steal cpu cycles from the miner. Ten minutes is good enough in my expirence.
+# Interval in seconds bettwen checks, too small will make the script steal cpu cycles from the miner. Ten minutes is good enough in my expirence.
 sleeptime=600
 
 function minerlaunch {
@@ -27,7 +32,7 @@ function minerlaunch {
     filename=$(date +%F_%H.%M.%S)
     
     # Miner settings. Adjust to yourself. Quick overview:
-    # ./primeminer                                                          <-- Xolokram primeminer binary location. Default is in the same catalog as this script.
+    # ./primeminer                                                          <-- Xolokram primeminer binary location. Default is in the same catalog as this script when launched as ./prime.sh SERVER PORT
     # -pooluser=ARv6mxBygPUGuTnkujcgdkaQoGTfSFcQzV                          <-- XPM address.
     # -genproclimit="8"                                                     <-- Number of threads to use.
     # -poolfee="3"                                                          <-- Adjust beeeeer.org fee, from 1 to 100, default 3%
