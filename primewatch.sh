@@ -39,7 +39,7 @@ function minerlaunch {
     # -sievesize="1000000" -sieveextensions="10" -sievepercentage="9"       <-- These parameters affect mining. Nobody wants to say what this three are exactly doing. Mayby nobody knows?
     #                                                                           For me it works little better with these values. Either play with them or cut this three out.
     # Note: don't change -poolip=$ip and -poolport=$2 unless you know how this script is working.
-    ./primeminer -poolip=$ip -poolport=$2 -pooluser=ARv6mxBygPUGuTnkujcgdkaQoGTfSFcQzV -genproclimit="8" -poolfee="3" -sievesize="1000000" -sieveextensions="10" -sievepercentage="9" 2>&1 | tee -a $logkat/$filename &
+    ./primeminer -poolip=$ip -poolport=$2 -pooluser=AV3w57CVmRdEA22qNiY5JFDx1J5wVUciBY -genproclimit="8" -poolfee="3" -sievesize="1000000" -sieveextensions="10" -sievepercentage="9" 2>&1 | tee -a $logkat/$filename &
 }
 
 # 5 DNS servers for a very "finesse" connection checking... No need to change them.
