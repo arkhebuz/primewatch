@@ -15,13 +15,13 @@ When I have started mining primecoins on my PC, occasionally two thing were happ
   1. Change catalog where logs will be stored;
   2. Set your network interface virtual filesystem catalog (like `/sys/class/net/eth0`);
   3. Set interval in seconds between checks. Should be large enough to let the miner recover under it's own steam if possible. Also, too small will make script steal cpu cycles from miner;
-  4. Set primeminer binary is location;
+  4. Set primeminer binary location;
   5. Edit primeminer launch parameters. This script is written with beeeeer.org pool in mind, refer to [http://www.peercointalk.org/index.php?topic=485.msg3304#msg3304](http://www.peercointalk.org/index.php?topic=485.msg3304#msg3304) and my comments in code;
 * Launch script, pass to it which beeeeer.org server and port it should use, like `./primewatch.sh us 8080`. You can just leave the terminal on, or use `screen`, or put script in autostart, or do something else. I prefer the second option.
 
 ## Quirks
 * Every primeminer run has it's own logfile with it's output, named witch launch time (YYYY-MM-DD_hh.mm.ss). Additionaly there's a `netlog` file, where only communicates from script about connection are stored.
 * Dependencies? Primeminer, pkill, pgrep, bash, grep... Nothing special.
-* Aha, works for me. Tested on Debian Stable.
+* Aha, works for me. May not work for you. Tested on Debian Stable.
 * Donate? Just a tip maybe? XPM: AV3w57CVmRdEA22qNiY5JFDx1J5wVUciBY
                             DTC: DMy7cMjzWycNUB4FWz2YJEmh8EET2XDvqz
