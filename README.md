@@ -14,7 +14,7 @@ When I have started mining primecoins on my PC, occasionally two thing were happ
 * **Edit** primewatch.sh file, all this is commented in code. You need to:
   1. Change catalog where logs will be stored;
   2. Set your network interface virtual filesystem catalog (like `/sys/class/net/eth0`);
-  3. Set interval in seconds between checks. Should be large enough to let the miner recover under it's own steam in most cases. Also, too small will make script steal cpu cycles from miner;
+  3. Set interval in seconds between checks. Should be large enough to let the miner recover under its own steam in most cases. Also, too small will make script steal cpu cycles from miner;
   4. Set primeminer binary location;
   5. Edit primeminer launch parameters. This script is written with beeeeer.org pool in mind, refer to [http://www.peercointalk.org/index.php?topic=485.msg3304#msg3304](http://www.peercointalk.org/index.php?topic=485.msg3304#msg3304) and my comments in code;
 * Launch script, pass to it which beeeeer.org server and port it should use, like `./primewatch.sh us 8080`. You can just leave the terminal on, or use `screen`, or put script in autostart, or do something else. I prefer the second option.
