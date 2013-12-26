@@ -6,10 +6,10 @@
 #          DTC: DMy7cMjzWycNUB4FWz2YJEmh8EET2XDvqz
 
 if [ "$#" -ne "2" ] ; then          # Script needs two parameters.
-    echo "USAGE:                    ./prime.sh SERVER PORT"
+    echo "USAGE:                    ./primewatch.sh SERVER PORT"
     echo "beeeeer.org servers:      us, eu"
     echo "beeeeer.org ports:        1337, 21, 443, 1337, 8080, 13337"
-    echo "Example:                  ./prime.sh eu 1337"
+    echo "Example:                  ./primewatch.sh eu 1337"
     echo "WARNING: you have to edit script if you haven't do so."
     exit
 fi
@@ -32,7 +32,7 @@ function minerlaunch {
     filename=$(date +%F_%H.%M.%S)
     
     # Miner settings. Adjust to yourself. Quick overview:
-    # ./primeminer                                                          <-- Xolokram primeminer binary location. Default is in the same catalog as this script when launched as ./prime.sh SERVER PORT
+    # ./primeminer                                                          <-- Xolokram primeminer binary location. Default is in the same catalog as this script when launched as ./primewatch.sh SERVER PORT
     # -pooluser=ARv6mxBygPUGuTnkujcgdkaQoGTfSFcQzV                          <-- XPM address.
     # -genproclimit="8"                                                     <-- Number of threads to use.
     # -poolfee="3"                                                          <-- Adjust beeeeer.org fee, from 1 to 100, default 3%
