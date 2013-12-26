@@ -23,5 +23,6 @@ When I have started mining primecoins on my PC, occasionally two thing were happ
 * Every primeminer run has it's own logfile with it's output, named witch launch time (YYYY-MM-DD_hh.mm.ss). Additionaly there's a `netlog` file, where only communicates from script about connection are stored.
 * Dependencies? Primeminer, pkill, pgrep, bash, grep... Nothing special.
 * Aha, works for me. May not work for you. Tested on Debian Stable.
-* Donate? Just a tip maybe? XPM: AV3w57CVmRdEA22qNiY5JFDx1J5wVUciBY  
-                            DTC: DMy7cMjzWycNUB4FWz2YJEmh8EET2XDvqz
+* Donate? Just a tip maybe?  
+   XPM: AV3w57CVmRdEA22qNiY5JFDx1J5wVUciBY  
+   DTC: DMy7cMjzWycNUB4FWz2YJEmh8EET2XDvqz
