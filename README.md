@@ -9,7 +9,7 @@ When I have started mining primecoins on my PC, occasionally two thing were happ
 * Did miner hang somewhere at connection after all? I had hangs lasting an hour or two with lots of `force reconnect if possible!` or `system:111` communicates (on my box usually one of them was clearly dominating, not both at the same time), without any `[MASTER]` line printed to output. Script simply compares line numbers of last `force reconnect if possible!` and `system:111` communicates with line number of last `[MASTER]` communicate. If `[MASTER]` is not the last one, primeminer is killed, launched against another server and info is written to logs.
 
 ## Quick how-to
-* I'm assuming you have primeminer binary. If not, google it, check peercointalk.org forum, etc.
+* I'm assuming you have primeminer binary and basic Linux skills. If not, google it, check peercointalk.org forum, etc.
 * Get primewatch script, either copy-paste from this site or use `git clone https://github.com/arkhebuz/primewatch` command. Use `chmod +x primewatch.sh` when necessary.
 * **Edit** primewatch.sh file, all this is commented in code. You need to:
   1. Change catalog where logs will be stored;
