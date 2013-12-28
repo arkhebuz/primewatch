@@ -21,6 +21,7 @@ When I have started mining primecoins on my PC, occasionally two thing were happ
 
 ## Quirks
 * Every primeminer run has it's own logfile with it's output, named with launch time (YYYY-MM-DD_hh.mm.ss). Additionaly there's a `netlog` file, where only communicates from script about connection are stored.
+* Script should be able to change server if miner can't connect at all to it, I hope.
 * Dependencies? Primeminer, pkill, pgrep, bash, grep, sed, ping... Nothing special.
 * Aha, works for me. May not work for you. Tested on Debian Stable.
 * Donate? Just a tip maybe?  
