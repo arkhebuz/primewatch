@@ -79,7 +79,6 @@ while true ; do
         fi
     fi
     
-    
     # I had long lasting hangs with "force reconnect if possible!" communicate on my box.
     connection_lost=$(grep -in "force reconnect if possible" "$logkat/$filename" | sed 's/[^0-9.]*\([0-9.]*\).*/\1/; $!d')        # Get line number of last "force reconnect if possible" comm.
     
@@ -105,7 +104,7 @@ while true ; do
                 hammer="eu"
             fi
             pkill primeminer
-            minerlaunch $hammer
+            minerlaunch $hammer $2
             break
         fi
     done
