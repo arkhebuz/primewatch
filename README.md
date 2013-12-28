@@ -4,7 +4,7 @@
 ## Why? For what?
 
 When I have started mining primecoins on my PC, occasionally two thing were happening: miner hangs during nighttime hours and (much much rarer) miner crashes. Well, there are better things to do at night than watching miner output, so I have searched the net and surprisingly didn't found any useful solution. So here it is, not a cutting edge programming but address three things:
-* Is Internet connection working at all? Script periodically pings Google DNS and if errors are returned pings four more servers and check's connection carrier, then writes info to logfile if less than half of packets are received.
+* Is Internet connection working at all? Script periodically pings Google DNS and if errors are returned pings four more servers and check's connection carrier, then writes info to logfile if less than half of packets is received.
 * Is miner running at all? If not, launch again.
 * Did miner hang somewhere at connection after all? I had hangs lasting an hour or two with lots of `force reconnect if possible!` or `system:111` communicates (on my box usually one of them was clearly dominating, not both at the same time), without any `[MASTER]` line printed to output. Script simply compares line numbers of last `force reconnect if possible!` and `system:111` communicates with line number of last `[MASTER]` communicate. If `[MASTER]` is not the last one, primeminer is killed, launched against another server and info is written to logs.
 
@@ -21,7 +21,7 @@ When I have started mining primecoins on my PC, occasionally two thing were happ
 
 ## Quirks
 * Every primeminer run has it's own logfile with it's output, named with launch time (YYYY-MM-DD_hh.mm.ss). Additionaly there's a `netlog` file, where only communicates from script about connection are stored.
-* Dependencies? Primeminer, pkill, pgrep, bash, grep... Nothing special.
+* Dependencies? Primeminer, pkill, pgrep, bash, grep, sed, ping... Nothing special.
 * Aha, works for me. May not work for you. Tested on Debian Stable.
 * Donate? Just a tip maybe?  
    XPM: AV3w57CVmRdEA22qNiY5JFDx1J5wVUciBY  
