@@ -27,3 +27,4 @@ When I have started mining primecoins on my PC, occasionally two thing were happ
 * Donate? Just a tip maybe?  
    XPM: AV3w57CVmRdEA22qNiY5JFDx1J5wVUciBY  
    DTC: DMy7cMjzWycNUB4FWz2YJEmh8EET2XDvqz
+* Check out [fork for Datacoin mining](https://github.com/arkhebuz/datawatch)!
