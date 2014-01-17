@@ -8,9 +8,9 @@
 if (($#!=2)) ; then          # Script needs two parameters.
 cat <<-EOF
 USAGE:                    ./primewatch.sh SERVER PORT
-beeeeer.org servers:      us, eu
+beeeeer.org servers:      us, ap
 beeeeer.org ports:        1337, 21, 443, 1337, 8080, 13337
-Example:                  ./primewatch.sh eu 1337
+Example:                  ./primewatch.sh ap 1337
 WARNING: you have to edit script if you haven't do so.
 EOF
 exit
@@ -29,8 +29,8 @@ netinterface="/sys/class/net/eth0"
 sleeptime=600
 
 function minerlaunch {
-    if [ "${1}" = "eu" ] ; then
-        ip="176.34.128.129" #server europa ip
+    if [ "${1}" = "ap" ] ; then
+        ip="54.251.179.44" #server asia ip
     elif [ "${1}" = "us" ] ; then
         ip="54.200.248.75"  #server usa ip
     fi
@@ -51,7 +51,7 @@ function minerlaunch {
 # First DNS server is checked first - if it's ok, the rest are omnitted.
 dns_servers=(8.8.8.8 8.8.4.4 208.67.222.222 209.244.0.3 8.26.56.26)
 
-hammer=$1 # you can't touch this
+hammer=${1} # you can't touch this
 
 # Exit if primeminer is already running.
 islive=$(pgrep primeminer)
@@ -107,10 +107,10 @@ while true ; do
             # If theres no "[MASTER]" somewhere after error communicate then kill primeminer, write to logs and start (on another pool when in jumping mode). Works good with long enough sleeptime.
             echo "$(date) : primeminer ${hangs}, line: ${!hangs} (last master: ${masterline})" 2>&1 | tee -a ${logkat}/${filename}
             echo "$(date) : primeminer ${hangs}, line: ${!hangs} (last master: ${masterline})" >> ${logkat}/netlog
-            if [ "${hammer}" = "eu" ] ; then  # If you wondered what hammer is for...
+            if [ "${hammer}" = "ap" ] ; then  # If you wondered what hammer is for...
                 hammer="us"
             else
-                hammer="eu"
+                hammer="ap"
             fi
             pkill primeminer
             minerlaunch ${hammer} ${2}
